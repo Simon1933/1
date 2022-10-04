@@ -1,6 +1,6 @@
 program calcus;
-uses crt;
-var a,b,c:integer;
+uses Math;
+var a,b,c:integer; 
 d:string;
 begin
 clrscr;
@@ -14,5 +14,8 @@ if d=('+') then b:=a+c;
 if d=('-') then b:=a-c;
 if d=('*') then b:=a*c;
 if d=('/') then b:=a div c;
+if d=('**') then b:=a*a;
+if d=('Sqrt') then b:=Sqrt(a)
 writeln('эппиэт: ',b);
 readln;
+end.
